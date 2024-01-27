@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id><![CDATA[Journal - Advanced Opencart Theme: Remove version signature from <html> tag]]></id>
+	<name><![CDATA[Journal - Advanced Opencart Theme: Remove version signature from <html> tag]]></name>
+	<code>knns-journal-common-header-remove-version-signature-v3x</code>
+	<version>1.0.0</version>
+	<author><![CDATA[<font color="#7F458C"><b>kanenas.net (aka Nikolas Branis)</b></font> - nbran@kanenas.net]]></author>
+	<link>https://kanenas.net/</link>
+	<file path="catalog/view/theme/journal*/template/common/header.twig" error="log">
+		<operation error="skip">
+			<search><![CDATA[<html dir="{{ direction }}" lang="{{ lang }}" class="{{ j3.document.getClasses() | join(' ') }}" data-jb="{{ j3.constant('JOURNAL3_BUILD') }}" data-jv="{{ j3.constant('JOURNAL3_VERSION') }}" data-ov="{{ constant('VERSION') }}">]]></search>
+			<add position="replace"><![CDATA[
+{# kanenas: knns_journal_common_header_remove_version_signature_v23x.xml (start) << #}
+<html dir="{{ direction }}" lang="{{ lang }}" class="{{ j3.document.getClasses() | join(' ') }}">
+{# kanenas: knns_journal_common_header_remove_version_signature_v23x.xml (end) << #}
+			]]></add>
+		</operation>
+	</file>
+</modification>
