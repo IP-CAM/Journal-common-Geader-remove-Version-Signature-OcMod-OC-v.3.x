@@ -1,2 +1,2 @@
-# opencart-ocmod-journal-common-header-remove-version-signature-v3x
-Journal - Advanced Opencart Theme: Remove version signature from &lt;html> tag
+# [OCMOD] Journal - Advanced Opencart Theme: Remove version signature from &lt;html> tag
+**Opencart**: v3.x
