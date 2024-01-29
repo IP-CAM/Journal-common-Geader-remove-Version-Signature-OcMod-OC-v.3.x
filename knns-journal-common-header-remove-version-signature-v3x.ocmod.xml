@@ -10,9 +10,9 @@
 		<operation error="skip">
 			<search><![CDATA[<html dir="{{ direction }}" lang="{{ lang }}" class="{{ j3.document.getClasses() | join(' ') }}" data-jb="{{ j3.constant('JOURNAL3_BUILD') }}" data-jv="{{ j3.constant('JOURNAL3_VERSION') }}" data-ov="{{ constant('VERSION') }}">]]></search>
 			<add position="replace"><![CDATA[
-{# kanenas: knns_journal_common_header_remove_version_signature_v23x.xml (start) << #}
+{# kanenas: knns-journal-common-header-remove-version-signature-v3x.ocmod.xml (start) << #}
 <html dir="{{ direction }}" lang="{{ lang }}" class="{{ j3.document.getClasses() | join(' ') }}">
-{# kanenas: knns_journal_common_header_remove_version_signature_v23x.xml (end) << #}
+{# kanenas: knns-journal-common-header-remove-version-signature-v23x.ocmod.xml (end) << #}
 			]]></add>
 		</operation>
 	</file>
